@@ -191,7 +191,7 @@ def train(num_iteration):
             epoch = int(i / int(data.train.num_examples / batch_size))
 
             print_at_step(epoch, feed_dict_tr, feed_dict_val, val_loss)
-            saver.save(session, 'dogs-cats-model')
+            saver.save(session, 'cars-bikes-model')
 
     total_iterations += num_iteration
 
