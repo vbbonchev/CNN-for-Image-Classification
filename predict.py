@@ -26,7 +26,7 @@ x_batch = images.reshape(1, image_size,image_size,num_channels)
 #restoring the model
 sess = tf.Session()
 # recreate the graph first
-saver = tf.train.import_meta_graph('dogs-cats-model.meta')
+saver = tf.train.import_meta_graph('cars-bikes-model.meta')
 # load the weights for the graph
 saver.restore(sess, tf.train.latest_checkpoint('./'))
 
